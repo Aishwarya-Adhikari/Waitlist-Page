@@ -12,14 +12,32 @@
 </head>
 
 <body class="bg-amber-50">
-    <div class="min-h-screen px-6 py-3 flex flex-col gap-16 ">
+    <div class="min-h-screen px-6 py-3 flex flex-col gap-16 md:px-10 md:py-7 lg:px-16">
         <!--Header Section-->
         <header class="flex justify-between">
             <div class="flex items-center justify-center gap-2">
                 <img src="assets/logo.png" alt="Logo">
                 <button class="bg-gradient-to-r from-orange-400 to-red-400 text-xs text-white px-2.5 py-1.5 rounded-2xl font-lato ">Hosterr is hiring!</button>
             </div>
-            <div >
+            <ul class="hidden lg:flex lg:justify-between items-center gap-6 font-lato text-gray-400">
+                <li>
+                    <a href="#">Plans</a>
+
+                </li>
+                <li>
+                    <a href="#">Find Domain</a>
+                </li>
+                <li>
+                    <a href="#">Why Hosterr</a>
+                </li>
+                
+            </ul>
+            <div class="hidden lg:flex lg:justify-between items-center gap-6 font-lato text-gray-400">
+                <a href="#" class="text-gray-400" font-lato>Sign In</a>
+                <button class="hidden lg:flex bg-blue-500 rounded-md px-4 py-3 font-medium text-white font-lato">Join Waitlist</button>
+
+            </div>
+            <div class="lg:hidden">
                 <i class="fa-solid fa-bars" ></i>
             </div>
 
@@ -28,21 +46,21 @@
         </header>
 
         <!--Main Content Section-->
-        <main>
-             <div class="flex items-center justify-center ">
-                <img src="assets/blueshape.png" alt="Blue Shape" class="h-64 -rotate-45">
-                <img src="assets/pinkshape.png" alt="Pink Shape" class=" absolute h-64 -rotate-[30deg]">
-                <img src="assets/purpleshape.png" alt="Purple Shape" class="absolute h-64 -rotate-[15deg]">
-                <img src="assets/model.png" alt="Model" class="absolute h-64">
+        <main class="lg:flex ">
+             <div class="flex items-center justify-center lg:flex-1 lg:order-2 lg:justify-end">
+                <img src="assets/blueshape.png" alt="Blue Shape" class="h-64 -rotate-45 md:h-72 lg:h-96">
+                <img src="assets/pinkshape.png" alt="Pink Shape" class=" absolute h-64 -rotate-[30deg] md:h-72 lg:h-96">
+                <img src="assets/purpleshape.png" alt="Purple Shape" class="absolute h-64 -rotate-[15deg] md:h-72 lg:h-96">
+                <img src="assets/model.png" alt="Model" class="absolute h-64 md:h-72 lg:h-96">
 
 
              </div>
 
-             <div class="space-y-4 mt-16">
+             <div class="space-y-4 mt-16 lg:flex-1 lg:order-1">
                 <h1 class="text-5xl font-bold leading-tight font-playfair">Host your website in less than 5 minutes.</h1>
                 <p class="font-lato text-gray-400">With Hosterr, get your website up and running in no less than 5 minutes with the most competitive pricing packages available online.</p>
                 <!-- Waitlist Form -->
-                <form action="#" class="flex flex-col gap-4">
+                <form action="#" class="flex flex-col gap-4 md:flex-row">
                     <input type="email" placeholder="Enter your email" required class="rounded-md px-4 py-3 placeholder:text-gray-400 ">
                     <button class="bg-blue-500 rounded-md px-4 py-3 font-medium text-white font-lato">Join Waitlist</button> 
                 </form>
